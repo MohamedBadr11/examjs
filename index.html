@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>yummy</title>
+</head>
+<body>
+    <div class="loading position-fixed bg-black">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+    <!-- navbar -->
+    <div class="side-nav-menu  position-fixed d-flex top-0">
+        <div class="nav-tab  d-flex flex-column justify-content-between vh-100 p-4 bg-black">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden pointer">
+                    <li onclick="displaySearch()"  class="py-2 position-relative ">Search</li>
+                    <li onclick="getCategores()" class="py-2 position-relative ">Categories</li>
+                    <li onclick="getArea()" class="py-2  position-relative ">Area</li>
+                    <li onclick="getIngredients()" class="py-2 position-relative ">Ingredients</li>
+                    <li onclick="getContactUs()" class="py-2 position-relative ">Contact Us</li>
+
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row py-5 g-4" id ="mealsData">
+            
+        </div>
+    </div>
+        <!-- <div class="container w-75">
+        </div>
+
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div> -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
